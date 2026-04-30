@@ -1,5 +1,5 @@
 import express from "express";
-import { getTickets } from "./ticket.controller";
+import { getTickets } from "./ticket.controller.js";
 
 const app = express();
 
