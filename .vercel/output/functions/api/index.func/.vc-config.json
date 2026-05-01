@@ -1,5 +1,5 @@
 {
   "runtime": "nodejs20.x",
-  "handler": "index.mjs",
+  "handler": "index.js",
   "launcherType": "Nodejs"
 }

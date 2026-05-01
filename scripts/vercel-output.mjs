@@ -13,8 +13,8 @@ fs.mkdirSync(funcDir, { recursive: true });
 
 // Copy the tsup bundle as the function handler
 fs.copyFileSync(
-  path.join(root, "dist", "index.js"),
-  path.join(funcDir, "index.mjs")
+  path.join(root, "dist", "index.cjs"),
+  path.join(funcDir, "index.js")
 );
 
 // Write function config
@@ -23,7 +23,7 @@ fs.writeFileSync(
   JSON.stringify(
     {
       runtime: "nodejs20.x",
-      handler: "index.mjs",
+      handler: "index.js",
       launcherType: "Nodejs",
     },
     null,
