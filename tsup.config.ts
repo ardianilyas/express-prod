@@ -5,7 +5,8 @@ export default defineConfig({
   format: ["esm"],
   target: "node18",
   clean: true,
-  sourcemap: true,
+  sourcemap: false,
   outDir: "api",
   bundle: true,
+  noExternal: [/.*/],
 });
