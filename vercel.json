@@ -1,8 +1,11 @@
 {
+  "functions": {
+    "dist/index.js": {}
+  },
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "src/index.ts"
+      "src": "/(.*)",
+      "dest": "dist/index.js"
     }
   ]
 }
