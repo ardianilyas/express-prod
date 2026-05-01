@@ -6,6 +6,6 @@ export default defineConfig({
   target: "node18",
   clean: true,
   sourcemap: true,
-  outDir: "dist",
+  outDir: "api",
   bundle: true,
 });
